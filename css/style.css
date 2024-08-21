@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-color: #00796b; /* Dark teal for header */
+    background-color: #002788; /* Dark teal for header */
     padding: 20px;
     text-align: center;
 }
@@ -37,7 +37,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    color: #cfd8dc;
+    color: #9cb5ef;
 }
 
 .hero {
@@ -51,13 +51,88 @@ header ul li a:hover {
 .hero h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: #00796b;
+    color: #002788;
 }
 
 .hero p {
     font-size: 1.5em;
     color: #333;
 }
+/* Text content styling */
+.text-content {
+    max-width: Auto;
+}
+
+.text-content h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Container for the image and text */
+.image-text-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between image and text */
+    max-width: Auto; /* Adjust the width as needed */
+    margin: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.image-text-container img {
+    width: 200px; /* Adjust the size as needed */
+    height: auto;
+    border-radius: 10px;
+}
+
+
+/*START EDIT*/
+.scrollable-section {
+    position: absolute;
+    top: 30px; /* Height of the header (adjust as necessary) */
+    bottom: 60px; /* Height of the footer (adjust as necessary) */
+    left: 0;
+    right: 0;
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 20px;
+    background-color: #e3f2fd;
+}
+/* Content within the scrollable section */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.image-text img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.image-text p {
+    margin-top: 10px;
+    text-align: center;
+}
+/*END OF EDIT*/
 
 .profile, .projects, .contact {
     padding: 40px 20px;
@@ -69,30 +144,35 @@ header ul li a:hover {
 }
 
 .profile img {
-    max-width: 150px;
-    border-radius: 50%;
+    max-width: 250px;
+    border-radius: 25%;
     margin: 20px auto;
-    display: block;
+    position: sticky;
+    object-fit: cover;
+    /*mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 200%);
+    -webkit-mask-image: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 200%);*/
 }
 
 footer {
     text-align: center;
-    background-color: #00796b;
+    background-color: #002788;
     color: white;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    padding: 20px;
+    position:fixed;
+    width:100%;
+    bottom: 0;
 }
 
 form input, form textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ccc;
+    border: 1px solid #b5b5f5e6;
     border-radius: 5px;
 }
 
 form button {
-    background-color: #00796b;
+    background-color: #002788;
     color: white;
     border: none;
     padding: 15px 20px;
@@ -101,5 +181,5 @@ form button {
 }
 
 form button:hover {
-    background-color: #004d40;
+    background-color: #4075ef;
 }
