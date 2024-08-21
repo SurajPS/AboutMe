@@ -117,6 +117,15 @@ header ul li a:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.travel_img{
+    border-radius: 10px;
+    
+}
+
+.travel_img:hover{
+    box-shadow: 2px 8px 18px rgba(18, 58, 165, 0.4), -2px -8px 18px rgba(30, 98, 223, 0.4);
+}
+
 #img_croatia {
     width: 300px;
 }
